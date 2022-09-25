@@ -35,15 +35,19 @@ const btn = document.querySelector(".btn");
 const errorMsg = document.querySelector(".error");
 
 btn.addEventListener("click", (e) => {
+  const email = input.value.toLowerCase();
+  const emailRegex = /^[a-z]+\d+\@[a-z]+\.[a-z]{3}/gm;
   e.preventDefault();
-  if (!input.value) {
+  if (!email) {
+    errorMsg.classList.remove("hidden");
+  } else if (!emailRegex.test(email)) {
     errorMsg.classList.remove("hidden");
   } else {
     errorMsg.classList.add("hidden");
   }
 });
 
-//selecting testimonial element for carusel
+//selecting testimonial element for carousel
 
 const slideCont = document.querySelector(".slide-container");
 const slides = document.querySelectorAll(".slide");
