@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+body {
+  background-image: url(../images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: 450px;
+  background-position: -80% -1%;
+}
+main {
+  background-image: url(../images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: 350px;
+  background-position: 900% 16%;
+}
+.active {
+  background: hsl(12, 88%, 59%);
+}
+@media screen and (max-width: 330px) {
+  body {
+    background-size: 350px;
+    background-position: -90% -0.5%;
+  }
+  #signUp {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 450px) {
+  body {
+    background-size: 520px;
+    background-position: 165% -2%;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-size: 520px;
+    background-position: 165% -3%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-size: 650px;
+    background-position: 150% -5%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    background-size: 700px;
+    background-position: 125% -5%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body {
+    background-position: 110% -5%;
+  }
+}
